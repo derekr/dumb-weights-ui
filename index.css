@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.input-bar {
+    display: flex;
+    align-content: stretch;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 44px;
+}
+
+.input-start     { order: 1; flex-grow: 1; }
+.input-bar input { order: 2; flex-grow: 3; }
+.input-end       { order: 3; flex-grow: 1; }
+
+.input-bar input {
+    margin: 0;
+
+    text-align: center;
+    font-size: 1em;
+
+    border: none;
+    background: #efefef;
+}
+
+.input-bar input:focus {
+    outline: none;
+}
+
+.step-btn {
+    margin: 0;
+
+    font-size: 1em;
+    font-weight: bold;
+    color: #efefef;
+
+    border: none;
+    background: #333;
+    cursor: pointer;
+}
+
+.step-btn:hover {
+    background: #555;
+}
+
+.step-btn:focus {
+    outline: none;
+}
+
+/**
+ * Weights
+ */
+.visualization {
+    padding-top: 20px;
+}
+
+.plate {
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 0 auto 10px auto;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.weight-45 {
+    width: 150px;
+    height: 150px;
+    border-color: #fc0079;
+    border-radius: 75px;
+}
+
+.weight-35 {
+    width: 130px;
+    height: 130px;
+    border-color: #00adff;
+    border-radius: 65px;
+}
+
+.weight-25 {
+    width: 110px;
+    height: 110px;
+    border-color: #ffb800;
+    border-radius: 55px;
+}
+
+.weight-10 {
+    width: 80px;
+    height: 80px;
+    border-color: #9a57ff;
+    border-radius: 40px;
+}
+
+.weight-5  {
+    width: 70px;
+    height: 70px;
+    border-color: #a3ff00;
+    border-radius: 35px;
+}
+
+.weight-2  {
+    width: 50px;
+    height: 50px;
+    border-color: #ddd;
+    border-radius: 25px;
+}
+
+.weight-text {
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+
+    width: 50px;
+    margin-left: -25px;
+    padding: 3px;
+
+    color: #efefef;
+    text-align: center;
+    font-family: menlo;
+    font-size: 10px;
+
+    background: #333;
+    border-radius: 3px;
+}

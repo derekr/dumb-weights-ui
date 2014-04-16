@@ -1,6 +1,12 @@
-<input type="number" name="weight" value="100" step="5" min="50">
+<link rel="stylesheet" href="./index.css" type="text/css" media="screen" title="Main Styles" charset="utf-8">
 
-<button type="button" id="step-up">Up</button>
-<button type="button" id="step-down">Down</button>
+<div class="visualization"></div>
+
+<div class="input-bar">
+    <input type="number" name="weight" value="100" step="5" min="50">
+
+    <button class="step-btn input-end" type="button" id="step-up">+</button>
+    <button class="step-btn input-start" type="button" id="step-down">-</button>
+</div>
 
 <script type="text/javascript" charset="utf-8" src="./bundle.js"></script>

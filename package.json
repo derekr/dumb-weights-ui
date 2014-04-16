@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/derekr/dumb-weights-ui",
   "devDependencies": {
-    "dumb-weights": "0.0.2",
-    "browserify": "^3.41.0"
+    "dumb-weights": "0.0.3",
+    "browserify": "^3.41.0",
+    "array-map": "0.0.0",
+    "foreach": "^2.0.4"
   }
 }
