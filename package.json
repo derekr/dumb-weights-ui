@@ -1,6 +1,6 @@
 {
   "name": "dumb-weights-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "UI for dumb-weights.",
   "main": "index.js",
   "scripts": {
