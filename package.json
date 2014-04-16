@@ -4,9 +4,16 @@
   "description": "UI for dumb-weights.",
   "main": "index.js",
   "scripts": {
-    "start": "open index.html",
-    "build": "browserify index.js > bundle.js",
-    "test": "tape test.js"
+    "start": "open ./build/index.html",
+    "build": "npm run bundle && npm run copy-static",
+    "bundle": "browserify index.js > bundle.js",
+    "copy-static": "cp index.html build/ && cp index.css build/ && cp bundle.js build/",
+    "deploy-init": "cd build && git init && git add -A",
+    "deploy-remote": "cd build && git remote add origin git@github.com:derekr/dumb-weights-ui.git",
+    "deploy-commit": "cd build && git commit -m 'Deploy'",
+    "deploy-push": "cd build && git push -f origin master:gh-pages",
+    "test": "tape test.js",
+    "deploy": "npm run build && npm run deploy-init && npm run deploy-remote && npm run deploy-commit && npm run deploy-push && rm -rf ./build/.git"
   },
   "repository": {
     "type": "git",
