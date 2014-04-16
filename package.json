@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "open ./build/index.html",
-    "build": "npm run bundle && npm run copy-static",
+    "build": "mkdir -p build && npm run bundle && npm run copy-static",
     "bundle": "browserify index.js > bundle.js",
     "copy-static": "cp index.html build/ && cp index.css build/ && cp bundle.js build/",
     "deploy-init": "cd build && git init && git add -A",
