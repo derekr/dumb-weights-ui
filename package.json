@@ -1,0 +1,29 @@
+{
+  "name": "dumb-weights-ui",
+  "version": "0.0.0",
+  "description": "UI for dumb-weights.",
+  "main": "index.js",
+  "scripts": {
+    "start": "open index.html",
+    "build": "browserify index.js > bundle.js",
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/derekr/dumb-weights-ui"
+  },
+  "keywords": [
+    "weights",
+    "plates"
+  ],
+  "author": "Derek Reynolds <drk@diy.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derekr/dumb-weights-ui/issues"
+  },
+  "homepage": "https://github.com/derekr/dumb-weights-ui",
+  "devDependencies": {
+    "dumb-weights": "0.0.2",
+    "browserify": "^3.41.0"
+  }
+}
